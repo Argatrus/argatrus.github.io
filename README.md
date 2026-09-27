@@ -4,7 +4,7 @@
 
 I'm Aarav Raja, a CS Engineer. I have over 6 years of experience coding in Python and Web Dev.
 
-## Technologies
+## Skills
 
 - Python
 - GIT

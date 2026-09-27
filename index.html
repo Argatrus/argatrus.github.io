@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Raja (Argatrus) - Portfolio</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-black text-gray-100 font-mono min-h-screen selection:bg-red-900 selection:text-white">
+<!-- EMAIL POPUP -->
+<div id="email-popover" class="hidden target:flex fixed inset-0 z-50 items-center justify-center bg-black/60 backdrop-blur-lg p-4">
+    <div class="bg-slate-900 border border-red-800/60 p-5 rounded-xl text-gray-200 shadow-2xl relative max-w-sm w-full">
+        <a href="#" class="absolute top-2 right-3 text-gray-500 hover:text-white text-small">✕</a>
+
+        <p class="text-xs text-gray-400 mb-2 font-mono">My Email Address:</p>
+        <code class="block bg-black px-3 py-2 rounded border border-slate-800 text-red-400 select-all font-mono text-sm text-center">argatrus@gmail.com</code>
+        <p class="text-[10px] text-gray-500 mt-2 text-center font-mono">Click text & press Cmd+C / Ctrl+C</p>
+    </div>
+</div>
+ <!-- NAVBAR -->
+    <header class="sticky top-4 z-50 w-full flex justify-center px-4 mb-12">
+        <nav class="bg-slate-900/80 border border-slate-800 backdrop-blur-md px-6 py-3 rounded-2xl shadow-lg shadow-red-950/20 transition-all duration-300 hover:border-red-900/50 @max-[399]:scale-x-50">
+            <ul class="flex flex-wrap gap-6 items-center justify-center text-xs font-medium">
+                <li>
+                    <a href="#" class="text-gray-300 hover:text-red-400 transition-colors duration-200">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="text-gray-300 hover:text-red-400 transition-colors duration-200">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="text-gray-300 hover:text-red-400 transition-colors duration-200">Projects</a>
+                </li>
+                <li class="h-4 w-px bg-slate-800"></li>
+                <li class="relative">
+                    <!-- Anchor links to the popover ID -->
+                    <a href="#email-popover" class="text-gray-300 hover:text-red-400 transition-colors duration-200 cursor-pointer">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Argatrus" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-red-400 transition-colors duration-200">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://leetcode.com/u/Argatrus/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-red-400 transition-colors duration-200">LeetCode</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/argatrus/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-red-400 transition-colors duration-200">Instagram</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 space-y-20 pb-16">
+
+        <!-- INTRO SECTION -->
+        <section id="intro" class="w-full flex justify-center">
+            <div class="flex flex-col md:flex-row items-center gap-8 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 w-full hover:shadow-red-800 hover:shadow-md">
+                
+                <!-- IMAGE -->
+                <div class="shrink-0 relative group transition-all duration-300 hover:-translate-y-1">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-red-800 to-slate-800 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-300"></div>
+                    <img src="./src/profile.png" alt="Aarav Raja" class="relative w-44 h-44 object-cover rounded-2xl border-2 border-red-800/60 shadow-lg">
+                </div>
+
+                <!-- TERMINAL -->
+                <div class="transition-all hover:-translate-y-1 w-full flex flex-col justify-center bg-gray-950 p-5 rounded-xl border border-slate-800/80 font-mono text-sm leading-relaxed shadow-inner">
+                    <div class="flex items-center gap-2 pb-3 mb-3 border-b border-slate-800/60">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                        <span class="text-xs text-gray-500 ml-2">bash - 80x24</span>
+                    </div>
+                    <pre class="text-red-500 whitespace-pre-wrap"><code><span class="text-gray-500">$</span> <span class="text-green-500/80">whoami</span>
+Aarav Raja (Argatrus)
+
+<span class="text-gray-500">$</span> <span class="text-green-500/80">cat about.txt</span>
+<span class="text-gray-400">CS Engineer and Student</span></code></pre>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="space-y-6">
+            <div class="flex items-center gap-3">
+                <span class="text-red-500 font-bold text-xl">&gt;</span>
+                <h2 class="text-2xl font-bold tracking-tight text-white">Skills</h2>
+            </div>
+            
+            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <li class="bg-slate-900/60 border border-slate-800 hover:border-red-800/60 p-4 rounded-xl flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-950/20">
+                    <span class="text-red-500 font-mono">#</span>
+                    <span class="font-medium text-gray-200">Python</span>
+                </li>
+                <li class="bg-slate-900/60 border border-slate-800 hover:border-red-800/60 p-4 rounded-xl flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-950/20">
+                    <span class="text-red-500 font-mono">#</span>
+                    <span class="font-medium text-gray-200">GIT</span>
+                </li>
+                <li class="bg-slate-900/60 border border-slate-800 hover:border-red-800/60 p-4 rounded-xl flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-950/20">
+                    <span class="text-red-500 font-mono">#</span>
+                    <span class="font-medium text-gray-200">GitHub</span>
+                </li>
+                <li class="bg-slate-900/60 border border-slate-800 hover:border-red-800/60 p-4 rounded-xl flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-950/20">
+                    <span class="text-red-500 font-mono">#</span>
+                    <span class="font-medium text-gray-200">HTML</span>
+                </li>
+                <li class="bg-slate-900/60 border border-slate-800 hover:border-red-800/60 p-4 rounded-xl flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-950/20">
+                    <span class="text-red-500 font-mono">#</span>
+                    <span class="font-medium text-gray-200">CSS</span>
+                </li>
+                <li class="bg-slate-900/60 border border-slate-800 hover:border-red-800/60 p-4 rounded-xl flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-950/20">
+                    <span class="text-red-500 font-mono">#</span>
+                    <span class="font-medium text-gray-200">Tailwind CSS</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-6">
+            <div class="flex items-center gap-3">
+                <span class="text-red-500 font-bold text-xl">&gt;</span>
+                <h2 class="text-2xl font-bold tracking-tight text-white">Projects</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between space-y-4 transition-all duration-300 hover:-translate-y-1 hover:border-red-800/60 hover:shadow-xl hover:shadow-red-950/20">
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-white group-hover:text-red-400 transition-colors">Python Code Editor</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">A Code Editor with Text Highlighting and Automatic Brackets.</p>
+                    </div>
+                    
+                    <div class="space-y-4 pt-4 border-t border-slate-800/80">
+                        <p class="text-xs text-gray-400">
+                            <strong class="text-gray-300 font-semibold">Technologies:</strong> 
+                            <span class="ml-1 inline-block bg-slate-800 text-red-400 px-2 py-0.5 rounded text-xs">Python</span>
+                        </p>
+                        <a href="https://github.com/Argatrus/Python-IDE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-medium text-red-500 hover:text-red-400 hover:underline transition-all">
+                            View Python-IDE Repository &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between space-y-4 transition-all duration-300 hover:-translate-y-1 hover:border-red-800/60 hover:shadow-xl hover:shadow-red-950/20">
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-bold text-white group-hover:text-red-400 transition-colors">Website For Culturals</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">A website created for my school's culturals.</p>
+                    </div>
+                    
+                    <div class="space-y-4 pt-4 border-t border-slate-800/80">
+                        <p class="text-xs text-gray-400">
+                            <strong class="text-gray-300 font-semibold">Technologies:</strong> 
+                            <span class="ml-1 inline-block bg-slate-800 text-red-400 px-2 py-0.5 rounded text-xs">HTML</span>
+                            <span class="inline-block bg-slate-800 text-red-400 px-2 py-0.5 rounded text-xs">CSS</span>
+                            <span class="inline-block bg-slate-800 text-red-400 px-2 py-0.5 rounded text-xs">JavaScript</span>
+                        </p>
+                        <a href="https://argatrus.github.io/Spectra_Website/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-medium text-red-500 hover:text-red-400 hover:underline transition-all">
+                            Visit Spectra-Website &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-800/80 py-8 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Aarav "Argatrus" Raja. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

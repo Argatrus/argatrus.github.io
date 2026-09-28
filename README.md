@@ -2,7 +2,7 @@
 
 ## About
 
-I'm Aarav Raja, a CS Engineer. I have over 6 years of experience coding in Python and Web Dev.
+I'm Aarav Raja, a Developer and Student. I have over 6 years of experience coding in Python and Web Dev.
 
 ## Skills
 
